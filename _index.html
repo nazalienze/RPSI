@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    (async function () {
+      try {
+        
+        await fetch("https://rajpracha.ddc.moph.go.th/Rpsi_pages/faifar/index.aspx", {
+          method: 'HEAD',
+          mode: 'no-cors',
+          cache: 'no-store'
+        });
+
+        
+        window.location.href = "https://rajpracha.ddc.moph.go.th/Rpsi_pages/faifar/index.aspx";
+      } catch (e) {
+        
+        window.location.href = "http://10.10.5.103/Rpsi_pages/faifar/index.aspx";
+      }
+    })();
+  </script>
+</head>
+<body>
+  <p>กำลังตรวจสอบและพาเข้าสู่ระบบ กรุณารอสักครู่...</p>
+</body>
+</html>
